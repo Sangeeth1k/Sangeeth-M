@@ -1,2 +1,9 @@
-numpy
-pandas
+Requirements
+
+This project is written in Python 3 and requires a few external libraries to run the analysis.
+
+NumPy → For numerical analysis, correlation calculation, and matrix operations.
+
+Pandas → For handling tabular data (loading, cleaning, and converting into NumPy arrays).
+
+These dependencies are listed in the file
