@@ -51,3 +51,14 @@ print("\nConclusion:")
 print("- Loan approval shows dependency on applicant financials (income, credit score).")
 print("- Gender may or may not affect approval depending on dataset bias.")
 print("- Credit Score has a stronger correlation with loan approval than income.")
+
+OutPut:
+Approval rate for Female: 22.22%
+Approval rate for Male: 36.36%
+Avg Income (Approved): 8409.17
+Avg Income (Rejected): 9114.43
+Correlation between Credit Score & Loan Status: 0.42
+Correlation Matrix:
+ [[ 1.          0.14751029 -0.09954087]
+ [ 0.14751029  1.          0.41996387]
+ [-0.09954087  0.41996387  1.        ]]
