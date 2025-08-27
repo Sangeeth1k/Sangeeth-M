@@ -1,15 +1,9 @@
-"""
-Bank Loan Approval Patterns Analysis using NumPy
-Created by: Sangeeth M
-Domain: Finance / Data Analysis
-"""
-
+#Implementation (Python with NumPy)
 import numpy as np
 import pandas as pd
 
-# ------------------------------
 # 1. Sample Dataset (20 records)
-# ------------------------------
+
 data = pd.DataFrame({
     'Gender': np.random.choice(['Male', 'Female'], 20),
     'ApplicantIncome': np.random.randint(2000, 15000, 20),
@@ -25,9 +19,8 @@ income = data['ApplicantIncome'].to_numpy()
 credit_score = data['CreditScore'].to_numpy()
 loan_status = np.where(data['LoanStatus'] == "Approved", 1, 0)
 
-# ------------------------------
+
 # 2. Analysis
-# ------------------------------
 
 # 2.1 Approval % by Gender
 print("Approval Rate by Gender:")
@@ -52,9 +45,8 @@ features = np.vstack((income, credit_score, loan_status))
 corr_matrix = np.corrcoef(features)
 print("\nCorrelation Matrix:\n", corr_matrix)
 
-# ------------------------------
 # 3. Conclusion
-# ------------------------------
+
 print("\nConclusion:")
 print("- Loan approval shows dependency on applicant financials (income, credit score).")
 print("- Gender may or may not affect approval depending on dataset bias.")
